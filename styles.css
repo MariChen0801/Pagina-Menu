@@ -1,0 +1,53 @@
+body{
+    background-image: url(IMG/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.enlaceMovil{
+    padding: 20px;
+    border-radius: 20px;
+    background: linear-gradient(#fdab53aa, #f2f0ebb1);
+    color: black;
+    margin: 10px;
+    width: 200px;
+    font-size: 20px;
+
+    /*ANIMACION*/
+
+    position: absolute;
+    left: 0;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    animation: moveLink 5s infinite alternate;
+}
+
+.reverse{
+    animation-direction: reverse;
+    background: linear-gradient(#f2f0ebb1, #fdab53aa);
+}
+
+@keyframes moveLink{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: calc(100% -200px);
+    }
+}
+
+input{
+    padding: 15px;
+    border-radius: 20px;
+    background: linear-gradient(#27272ac3, #6a2e2acf, #dc783aca, #efe1cec6);
+}
+img{
+    max-width: 200px;
+    max-height: 200px;
+    background-size: cover;
+}
+p, h1, h2, h3, h4{
+    color: white;
+}
+h4{
+    font-size: 19px;
+}
